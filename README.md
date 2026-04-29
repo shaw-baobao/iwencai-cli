@@ -73,4 +73,4 @@ iwencai-query -q "..." --raw
 
 ## License
 
-MIT
+Apache-2.0

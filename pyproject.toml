@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "iWenCai 爱问财自然语言选股 CLI — 通过 Playwright 驱动本机 Chrome 抓取问财结果"
 readme = "README.md"
 requires-python = ">=3.9"
-license = { text = "MIT" }
+license = { text = "Apache-2.0" }
 authors = [{ name = "shaw-baobao" }]
 dependencies = [
   "playwright>=1.30",
