@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iwencai-cli"
+version = "0.1.0"
+description = "iWenCai 爱问财自然语言选股 CLI — 通过 Playwright 驱动本机 Chrome 抓取问财结果"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "shaw-baobao" }]
+dependencies = [
+  "playwright>=1.30",
+]
+
+[project.optional-dependencies]
+table = [
+  "tabulate>=0.9",
+]
+
+[project.urls]
+Homepage = "https://github.com/shaw-baobao/iwencai-cli"
+Repository = "https://github.com/shaw-baobao/iwencai-cli"
+
+[project.scripts]
+iwencai-query = "iwencai_cli.cli:main"
