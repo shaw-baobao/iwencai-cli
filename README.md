@@ -14,9 +14,19 @@
 
 ## 安装
 
+安装最新发布版：
+
+```bash
+pip install git+https://github.com/shaw-baobao/iwencai-cli.git@v0.1.0
+```
+
+安装 main 分支最新版：
+
 ```bash
 pip install git+https://github.com/shaw-baobao/iwencai-cli.git
 ```
+
+查看所有版本：[Releases](https://github.com/shaw-baobao/iwencai-cli/releases)。
 
 第一次运行时如果没有 Playwright，加 `--install-playwright -y` 自动安装：
 
