@@ -17,7 +17,7 @@
 安装最新发布版：
 
 ```bash
-pip install git+https://github.com/shaw-baobao/iwencai-cli.git@v0.1.0
+pip install git+https://github.com/shaw-baobao/iwencai-cli.git@v1.0.0
 ```
 
 安装 main 分支最新版：
@@ -71,13 +71,13 @@ iwencai-query -q "..." --raw
 2. 去除 `navigator.webdriver` 等自动化特征，避开反爬
 3. 打开 `https://www.iwencai.com/unifiedwap/result?w=<你的查询>`
 4. 等待页面 JS 渲染结果表格
-5. 从 DOM 提取股票列表（合并问财的固定左列 + 滚动右列双栏表格）
+5. 从 DOM 提取股票列表（合并问财的固定左列 + 滚动右列双栏表格，并自动翻页）
 6. 输出为表格或 JSON
 
 ## 注意事项
 
 - 问财网页的结果列会根据查询语句动态变化；工具输出的列名就是页面上显示的表头
-- 问财免费版结果上限一般为 50 条
+- 问财网页单页通常最多显示 50 条；工具会自动翻页抓取后续结果
 - 频繁大量查询可能触发问财的速率限制 —— 脚本使用时建议合理间隔
 - 本项目与同花顺 / 问财官方无任何关联，仅是对其公开网页结果的自动化封装
 

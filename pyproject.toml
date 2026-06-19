@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "iwencai-cli"
-version = "0.1.0"
+version = "1.0.0"
 description = "iWenCai 爱问财自然语言选股 CLI — 通过 Playwright 驱动本机 Chrome 抓取问财结果"
 readme = "README.md"
 requires-python = ">=3.9"
